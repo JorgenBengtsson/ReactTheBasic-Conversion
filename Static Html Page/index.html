@@ -15,16 +15,7 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      class App extends React.Component {
-        constructor(props) {
-          super();
-        }
-        render() {
-          return <h1>{this.props.name}</h1>;
-        }
-      }
-      var someText = <h1>Title</h1>;
-      ReactDOM.render(someText, document.getElementById("root"));
+      ReactDOM.render(<h1>Hello World!</h1>, document.getElementById("root"));
     </script>
   </body>
 </html>
