@@ -15,7 +15,10 @@
   <body>
     <div id="root"></div>
     <script type="text/babel">
-      ReactDOM.render(<h1>Hello World!</h1>, document.getElementById("root"));
+      function Elem(props) {
+        return <p>{props.value}</p>;
+      }
+      ReactDOM.render(<Elem />, document.getElementById("root"));
     </script>
   </body>
 </html>
